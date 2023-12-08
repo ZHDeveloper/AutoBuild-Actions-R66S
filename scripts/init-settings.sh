@@ -10,10 +10,10 @@
 uci set luci.main.mediaurlbase='/luci-static/argon'
 uci commit luci
 
-uci set network.wan.proto=pppoe
-uci set network.wan.username='0201213572798@163.gd'
-uci set network.wan.password='0201213572798'
-uci commit network
+# uci set network.wan.proto=pppoe
+# uci set network.wan.username='0201213572798@163.gd'
+# uci set network.wan.password='0201213572798'
+# uci commit network
 
 # Disable opkg signature check
 sed -i 's/option check_signature/# option check_signature/g' /etc/opkg.conf
