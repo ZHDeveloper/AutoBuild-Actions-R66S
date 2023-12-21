@@ -32,3 +32,15 @@ wget -qO- $GEOIP_URL > files/etc/openclash/GeoIP.dat
 wget -qO- $GEOSITE_URL > files/etc/openclash/GeoSite.dat
 
 chmod +x files/etc/openclash/core/clash*
+
+################## 下载仓库 ############################
+
+mkdir -p files/root
+pushd files/root
+
+# Clone chatgpt-on-wechat repository
+git clone --depth=1 https://github.com/ZHDeveloper/chatgpt-on-wechat.git ./chatgpt-on-wechat
+# 添加权限
+chmod +x ./chatgpt-on-wechat/scripts/*.sh
+
+popd
