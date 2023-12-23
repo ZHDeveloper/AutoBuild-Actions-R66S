@@ -25,4 +25,12 @@ sed -i 's/option check_signature/# option check_signature/g' /etc/opkg.conf
 # uci set fstab.@global[0].check_fs=1
 # uci commit fstab
 
+pip install --upgrade pip
+
+cd /root/chatgpt-on-wechat
+
+pip3 install -r requirements.txt
+
+sh scripts/start.sh
+
 exit 0
