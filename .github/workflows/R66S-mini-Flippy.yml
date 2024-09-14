@@ -14,7 +14,7 @@ on:
     - cron: 0 15 * * *
 
 env:
-  REPO_URL: https://github.com/immortalwrt/immortalwrt
+  REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   CONFIG_FILE: Flippy/r66s-mini.config
   DIY_SCRIPT1: Flippy/diy-part1.sh
